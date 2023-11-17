@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(200, 221, 244);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: #3a4452;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+form input {
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+form .display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0px;
+  background-color: white;
+}
+
+form input:active {
+  box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.2),
+    inset 4px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+form .display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  color: #3a4452;
+  box-shadow: none;
+}
+
+form input.equal {
+  width: 145px;
+}
+
+form input.AC {
+  width: 145px;
+  background-color: rgb(14, 151, 14);
+}
+
+.info {
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: sans-serif; /* Replace 'Your Font' with your preferred font */
+  font-size: 18px;
+  color: #333; /* Adjust color as needed */
+  background-color: #fff; /* Adjust background color as needed */
+  padding: 10px 3px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
