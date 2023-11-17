@@ -7,8 +7,16 @@ body {
   height: 100vh;
   background-color: rgb(200, 221, 244);
   display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
+}
+
+form {
+    min-width: auto;
+    min-height: auto;
+    max-width: 500px;
+    max-height: 500px;
 }
 
 .calculator {
